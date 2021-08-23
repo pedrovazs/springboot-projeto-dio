@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 
+import org.hibernate.envers.Audited;
+
 import lombok.*;
 
 @Getter
@@ -16,6 +18,7 @@ import lombok.*;
 @EqualsAndHashCode
 @Builder
 @Entity
+@Audited
 public class Usuario {
     
     @Id
